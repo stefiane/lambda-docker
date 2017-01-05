@@ -53,7 +53,7 @@ sudo ./server.py
 Or run in container.
 
 ```
-docker run -d -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp -p 8080:8080 tobegit3hub/lambda-docker
+docker run -d -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp --privileged=true -p 8080:8080 tobegit3hub/lambda-docker
 ```
 
 ## Demonstration
